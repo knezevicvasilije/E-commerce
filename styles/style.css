@@ -1,0 +1,35 @@
+:root {
+  --grayMain: rgb(176, 178, 187);
+  --blueMain: #00b3ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+nav li {
+  margin-left: 2rem;
+}
+nav a {
+  text-decoration: none;
+  color: var(--grayMain);
+  font-size: 1rem;
+  padding-bottom: 2.5rem;
+}
+nav a:hover {
+  border-bottom: 3px solid var(--blueMain);
+}
