@@ -161,6 +161,52 @@ input[name="r"] {
   margin-left: -66.66666%;
 }
 
+/*FEATURED CATEGORIES*/
+
+.container {
+  width: 70%;
+  margin: 4rem auto;
+}
+.featuredTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.featuredLeft {
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-size: 0.8rem;
+}
+.featuredRight span {
+  margin-right: 1rem;
+}
+/*CONTENT OF FEATURED CATEGORIES*/
+.featuredContent {
+  margin: 4rem auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 0.7rem;
+  width: 100%;
+}
+.featuredBox {
+  border-bottom: 1px solid rgba(161, 159, 159, 0.562);
+}
+.featuredData {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-size: 0.75rem;
+  margin-top: 0.45rem;
+}
+.featuredData .featuredNoOfItems {
+  color: gray;
+  text-transform: capitalize;
+  margin-top: 0.2rem;
+}
+.featuredBox img {
+  height: 10rem;
+}
+
 @media only screen and (max-width: 768px) {
   .slider {
     width: 100%;
