@@ -217,6 +217,9 @@ input[name="r"] {
 /*Hover on featured product*/
 .featuredProduct {
   position: relative;
+  background-color: #f4f4f4;
+  padding: 0.7rem 0;
+  text-align: center;
 }
 .featuredContent > .featuredProduct::before {
   content: "";
