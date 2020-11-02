@@ -184,6 +184,9 @@ input[name="r"] {
 .featuredRight span {
   margin-right: 1rem;
 }
+.featuredRight span:hover {
+  cursor: pointer;
+}
 /*CONTENT OF FEATURED CATEGORIES*/
 .featuredContent {
   margin: 4rem auto;
@@ -215,7 +218,7 @@ input[name="r"] {
 .featuredProduct {
   position: relative;
 }
-.featuredProduct::before {
+.featuredContent > .featuredProduct::before {
   content: "";
   position: absolute;
   top: 0;
@@ -261,6 +264,42 @@ input[name="r"] {
   opacity: 1;
 }
 
+/*Best price in this month*/
+.bestPrice {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-column-gap: 0.7rem;
+  width: 100%;
+}
+
+.bestPrice_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bestPrice_title h2 {
+  width: 50%;
+  text-transform: uppercase;
+  text-align: left;
+  font-family: "Roboto";
+  font-size: 1.7rem;
+}
+.bestPrice_title .button {
+  color: #fff;
+  background: var(--blueMain);
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 25%;
+  padding: 0.7rem 0.1rem;
+  font-family: "RobotoLight";
+  text-align: center;
+}
+.priceFirst {
+  border-bottom: none;
+}
+.price img {
+  height: 15rem;
+}
 @media only screen and (max-width: 768px) {
   .slider {
     width: 100%;
