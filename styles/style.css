@@ -298,8 +298,41 @@ input[name="r"] {
   border-bottom: none;
 }
 .price img {
-  height: 15rem;
+  height: 14.5rem;
 }
+
+/*NEW ARRIVALS*/
+.newArrivals {
+  margin: 4rem auto;
+  width: 100%;
+}
+.arrivals ul {
+  display: flex;
+  list-style-type: none;
+}
+.arrivals li {
+  margin-left: 1.2rem;
+}
+.arrivals a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: gray;
+}
+.arrivals a:hover {
+  color: var(--blueMain);
+}
+
+/*NEW ARRIVALS PRODUCTS*/
+
+.newArrivals_products {
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 0.7rem;
+  row-gap: 0.7rem;
+  width: 100%;
+}
+
 @media only screen and (max-width: 768px) {
   .slider {
     width: 100%;
