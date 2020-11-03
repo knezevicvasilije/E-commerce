@@ -457,3 +457,58 @@ input[name="r"] {
     width: 100%;
   }
 }
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  nav {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .icons {
+    display: none;
+  }
+  .slider {
+    width: 100%;
+  }
+  .slider .left {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .slider .right {
+    display: none;
+  }
+  .slider .left h1 {
+    font-size: 3.3rem;
+    line-height: 0.1;
+    margin: 3rem auto 4.5rem;
+  }
+  .featuredTitle .featuredLeft {
+    margin: 0 auto;
+  }
+  .featuredTitle .featuredRight {
+    display: none;
+  }
+  .featuredContent {
+    margin: 4rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 0.7rem;
+    width: 100%;
+  }
+  .bestPrice {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0.7rem;
+    width: 100%;
+  }
+  .newArrivals_products {
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0.7rem;
+    row-gap: 0.7rem;
+    width: 100%;
+  }
+}
