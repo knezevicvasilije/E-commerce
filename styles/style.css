@@ -387,6 +387,17 @@ input[name="r"] {
 }
 
 @media only screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav .logo {
+    margin-left: 3rem;
+  }
+  .menu {
+    display: none;
+  }
   .slider {
     width: 100%;
   }
@@ -414,5 +425,35 @@ input[name="r"] {
   .bar {
     width: 1.8rem;
     height: 0.8;
+  }
+  .featuredTitle .featuredLeft {
+    margin: 0 auto;
+  }
+  .featuredTitle .featuredRight {
+    display: none;
+  }
+  .featuredContent {
+    margin: 4rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 0.7rem;
+    width: 100%;
+  }
+  .bestPrice {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0.7rem;
+    width: 100%;
+  }
+  .newArrivals .featuredTitle {
+    text-align: left;
+  }
+  .newArrivals_products {
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0.7rem;
+    row-gap: 0.7rem;
+    width: 100%;
   }
 }
