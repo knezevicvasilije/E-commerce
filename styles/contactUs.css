@@ -1,0 +1,239 @@
+:root {
+  --grayMain: rgb(176, 178, 187);
+  --blueMain: #00b3ff;
+  --blueMilky: #d6ecf6;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: RobotoLight;
+  src: url(../fonts/Roboto-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(../images/customBck.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "RobotoLight";
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 10vh;
+  width: 100%;
+  background: white;
+  margin: 0 auto;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+nav li {
+  margin-left: 2rem;
+}
+nav a {
+  text-decoration: none;
+  color: var(--grayMain);
+  font-size: 1rem;
+  padding-bottom: 1.8rem;
+}
+nav a:hover {
+  border-bottom: 4px solid var(--blueMain);
+}
+
+.content {
+  width: 50%;
+  margin: 10rem auto;
+  text-align: center;
+  background: #ffffff;
+  opacity: 0.9;
+  padding: 3rem 4rem;
+}
+.contactTitle {
+  text-transform: uppercase;
+  color: var(--grayMain);
+  border-bottom: 1px solid var(--blueMain);
+  box-shadow: 0 4px 2px -2px rgba(0, 179, 255, 0.2);
+  padding-bottom: 1rem;
+}
+.contactTitle h1 {
+  font-weight: 800;
+}
+.contactTitle span {
+  color: var(--blueMain);
+}
+.contactForm form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 4rem auto;
+  align-items: center;
+}
+.contactForm .formEl {
+  margin-top: 2rem;
+  width: 70%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(112, 183, 230, 0.658);
+  font-size: 1rem;
+}
+.contactForm .area {
+  font-size: 1.3rem;
+}
+.contactForm .btn {
+  width: 50%;
+  color: #fff;
+  background: var(--blueMain);
+  text-decoration: none;
+  padding: 0.6rem 2.7rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 3rem;
+}
+.contactForm .btn:hover {
+  box-shadow: 0px 2px 30px 2px rgba(0, 179, 255, 0.9);
+}
+
+footer {
+  width: 100%;
+  background: #0a0f2e;
+  color: #76777a;
+}
+.footerInfo {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 2.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.fBox {
+  display: inline-block;
+  text-align: left;
+  width: 25%;
+}
+.fBox img {
+  height: 3.6rem;
+}
+.fBox h1 {
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "RobotoLight";
+  text-transform: uppercase;
+}
+.fBox ul {
+  list-style-type: none;
+}
+.fBox li {
+  font-size: 0.84rem;
+  line-height: 1.7rem;
+  color: #6f738e;
+  font-weight: 200;
+  font-family: "RobotoLight";
+}
+.fBox a {
+  text-decoration: none;
+  color: #6f738e;
+}
+.fBox a:hover {
+  color: #d6ecf6;
+}
+.footerLeft {
+  width: 35%;
+}
+.fContent {
+  margin-top: 1rem;
+}
+.fContent ul i {
+  margin-right: 0.5rem;
+}
+.hrFooter {
+  border: none;
+  border-bottom: 0.5px solid rgba(128, 128, 128, 0.438);
+  margin: 2rem 0;
+}
+.footerAbout {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  flex-wrap: wrap;
+}
+.lastFoot {
+  width: 35%;
+}
+.lastFoot:last-child {
+  width: 20%;
+}
+.footerSocial ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+.footerSocial a {
+  color: #6f738e;
+}
+.footerSocial a:hover {
+  color: #d6ecf6;
+}
+.footerPayment:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav .logo {
+    margin-left: 3rem;
+  }
+  .menu {
+    display: none;
+  }
+  .content {
+    width: 90%;
+    padding: 2rem 1rem;
+  }
+  .contactForm .btn {
+    width: 60%;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .fBox {
+    width: 100%;
+    text-align: center;
+    margin: 1.7rem auto;
+  }
+  .lastFoot {
+    width: 100%;
+    text-align: center;
+    margin: 1rem auto;
+  }
+
+  .lastFoot:last-child {
+    width: 100%;
+  }
+  .footerSocial a {
+    font-size: 1rem;
+  }
+}

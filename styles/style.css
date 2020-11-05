@@ -16,6 +16,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  overflow-x: hidden;
+}
 
 nav {
   display: flex;
@@ -386,7 +389,215 @@ input[name="r"] {
   cursor: pointer;
 }
 
+/***********LATEST BLOG POST***********/
+
+.latestProducts {
+  margin: 3.5rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 0.7rem;
+  width: 100%;
+}
+.latestProduct img {
+  width: 19.5rem;
+  border: 1px solid rgba(128, 128, 128, 0.158);
+}
+.latestProductData {
+  width: 98%;
+}
+.latestProductData h3 {
+  font-size: 1rem;
+  line-height: 2.1rem;
+  color: #0a0f2e;
+  font-weight: bold;
+  font-family: "Roboto";
+}
+.latestProductData span {
+  font-size: 0.9rem;
+  color: #b0b2bb;
+  font-family: "RobotoLight";
+}
+.latestProductData p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #b0b2bb;
+  font-weight: 200;
+  font-family: "RobotoLight";
+}
+
+.shopByBrands {
+  margin: 5rem auto;
+}
+.brands {
+  margin-top: 2.5rem;
+}
+.brands ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  flex-wrap: wrap-reverse;
+}
+.shopByBrands ul li:hover {
+  cursor: pointer;
+  display: inline-block;
+  animation: tada;
+  animation-duration: 0.8s;
+}
+
+/*************SUBSCRIBE************/
+
+.subscribe {
+  width: 100%;
+  margin: 0 auto;
+  background: #f5f5f5;
+  text-align: center;
+}
+.subContent {
+  margin: 0 auto;
+  padding: 6rem;
+}
+.subTitle h1 {
+  font-size: 1.5rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  color: #0a0f2e;
+  font-weight: bold;
+  font-family: "Roboto";
+  text-align: center;
+}
+.subTitle p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  color: #76777a;
+  font-family: "RobotoLight";
+  font-weight: 200;
+  text-align: center;
+}
+.subInput {
+  margin-top: 1.5rem;
+}
+.subInput .inputEmail {
+  width: 25rem;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: #b0b2bbb2;
+}
+.inputButton {
+  color: #fff;
+  background: var(--blueMain);
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  font-family: "RobotoLight";
+  padding: 0.5rem 1rem;
+  outline: none;
+  cursor: pointer;
+}
+.inputButton:hover {
+  background: #04709ec7;
+}
+/**************FOOTER*****************/
+footer {
+  width: 100%;
+  background: #0a0f2e;
+  color: #76777a;
+}
+.footerInfo {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 2.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.fBox {
+  display: inline-block;
+  text-align: left;
+  width: 25%;
+}
+.fBox img {
+  height: 3.6rem;
+}
+.fBox h1 {
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "RobotoLight";
+  text-transform: uppercase;
+}
+.fBox ul {
+  list-style-type: none;
+}
+.fBox li {
+  font-size: 0.84rem;
+  line-height: 1.7rem;
+  color: #6f738e;
+  font-weight: 200;
+  font-family: "RobotoLight";
+}
+.fBox a {
+  text-decoration: none;
+  color: #6f738e;
+}
+.fBox a:hover {
+  color: #d6ecf6;
+}
+.footerLeft {
+  width: 35%;
+}
+.fContent {
+  margin-top: 1rem;
+}
+.fContent ul i {
+  margin-right: 0.5rem;
+}
+.hrFooter {
+  border: none;
+  border-bottom: 0.5px solid rgba(128, 128, 128, 0.438);
+  margin: 2rem 0;
+}
+.footerAbout {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  flex-wrap: wrap;
+}
+.lastFoot {
+  width: 35%;
+}
+.lastFoot:last-child {
+  width: 20%;
+}
+.footerSocial ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+.footerSocial a {
+  color: #6f738e;
+  font-size: 1rem;
+}
+.footerSocial a:hover {
+  color: #d6ecf6;
+}
+.footerPayment:hover {
+  cursor: pointer;
+}
 @media only screen and (max-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
   nav {
     display: flex;
     justify-content: center;
@@ -428,6 +639,12 @@ input[name="r"] {
   }
   .featuredTitle .featuredLeft {
     margin: 0 auto;
+    width: 100%;
+  }
+  .featuredTitle .featuredLeft ul li {
+    margin-left: 0.3rem;
+    font-size: 0.6rem;
+    border-bottom: 0.4px solid var(--blueMain);
   }
   .featuredTitle .featuredRight {
     display: none;
@@ -445,6 +662,13 @@ input[name="r"] {
     grid-column-gap: 0.7rem;
     width: 100%;
   }
+  .bestPrice_title h2 {
+    font-size: 1rem;
+  }
+  .bestPrice_title .button {
+    width: 35%;
+    font-size: 0.8rem;
+  }
   .newArrivals .featuredTitle {
     text-align: left;
   }
@@ -455,6 +679,50 @@ input[name="r"] {
     grid-column-gap: 0.7rem;
     row-gap: 0.7rem;
     width: 100%;
+  }
+  .latestProducts {
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0.7rem;
+    row-gap: 3.7rem;
+    width: 100%;
+  }
+
+  .latestProductData {
+    text-align: center;
+  }
+  .brands ul li {
+    width: 30%;
+  }
+  .subContent {
+    padding: 3rem;
+  }
+  .subTitle h1 {
+    font-size: 1.1rem;
+  }
+  .inputEmail {
+    text-align: left;
+  }
+  .inputButton {
+    margin-top: 1rem;
+  }
+
+  .fBox {
+    width: 100%;
+    text-align: center;
+    margin: 1.7rem auto;
+  }
+  .lastFoot {
+    width: 100%;
+    text-align: center;
+    margin: 1rem auto;
+  }
+  .lastFoot:last-child {
+    width: 100%;
+  }
+  .footerSocial a {
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 992px) and (min-width: 768px) {
@@ -510,5 +778,17 @@ input[name="r"] {
     grid-column-gap: 0.7rem;
     row-gap: 0.7rem;
     width: 100%;
+  }
+  .latestProducts {
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 0.7rem;
+    row-gap: 3.7rem;
+    width: 100%;
+  }
+
+  .latestProductData {
+    text-align: center;
   }
 }
